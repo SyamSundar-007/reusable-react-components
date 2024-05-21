@@ -45,7 +45,7 @@ export const ImageSlider = () => {
     console.log(`left Click index${currentIndex}`)
 
     if(isloading){
-        return<div>Page is loading please wait</div>
+        return<div><h3>Page is loading please wait</h3></div>
     }
 
 
