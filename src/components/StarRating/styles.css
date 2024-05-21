@@ -1,0 +1,14 @@
+.star-rating{
+    width: 100vw;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.active{
+    color: #ffff00;
+}
+
+.inactive{
+    color: #000000;
+}
