@@ -4,5 +4,5 @@ This Repo contains reuseable React Componenets that can we use in combination or
 
 Steps as follows
 
-npm install
+npm install g
 ...
