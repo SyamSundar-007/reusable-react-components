@@ -1,0 +1,55 @@
+import { useEffect, useState } from "react"
+import { data } from "./serachData"
+
+export const AutoComplete = () => {
+
+
+    const [inputValue, setInputValue] = useState("")
+    const [filterData, setFilterData] = useState([])
+    // const [selectedValue, setSelectedValue] = useState(inputValue)
+
+
+    const handleOnChange = (e) => {
+        setInputValue(e.target.value)
+    }
+
+    const filteredData = () => {
+        const arr = data.filter(item => inputValue !== "" && item.indexOf(inputValue.toLowerCase()) > -1)
+        setFilterData(arr)
+    }
+
+    const handleOnClick = (e) => {
+        setInputValue(e.target.innerText)
+        setFilterData([])
+    }
+
+
+    useEffect(() => {
+        filteredData()
+
+    }, [inputValue])
+
+
+    console.log(filterData)
+
+
+    return <div className="main-container" style={{
+        display:"flex",
+        flexDirection:"column"
+    }}>
+        <div className="input-container">
+            <input value={inputValue} onChange={handleOnChange} placeholder="Search..."></input>
+            <button>Search</button>
+        </div>
+
+        <div className="result-container">
+            {
+                filterData.map((val) => {
+                    return <div onClick={handleOnClick}>{val}</div>
+                })
+            }
+        </div>
+
+        {/* Syam */}
+    </div>
+}

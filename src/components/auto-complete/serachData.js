@@ -1,0 +1,1 @@
+export const data = ["syam", "sundar","reddy","jhon", "bhanu","nani","shreya","shruthi"]
