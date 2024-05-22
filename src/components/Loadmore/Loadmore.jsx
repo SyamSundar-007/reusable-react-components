@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import "./styles.css"
+import "./load-styles.css"
 
 
 

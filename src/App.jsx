@@ -6,6 +6,7 @@ import { Accordian } from './components/accordion/Acordian'
 import { StarRating } from './components/StarRating/StarRating'
 import { ImageSlider } from './components/ImageSlider/ImageSlider'
 import { LoadMore } from './components/Loadmore/Loadmore'
+import { Darktheme } from './components/dark-theme/Darktheme'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,8 @@ function App() {
         {/* <Accordian></Accordian> */}
         {/* <StarRating></StarRating> */}
         {/* <ImageSlider></ImageSlider> */}
-        <LoadMore></LoadMore>
+        {/* <LoadMore></LoadMore> */}
+        <Darktheme></Darktheme>
       </div>
     </>
   )

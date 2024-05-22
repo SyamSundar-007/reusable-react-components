@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import "./styles.css"
+import "./star-styles.css"
 import { useState } from "react";
 export const StarRating = () => {
    

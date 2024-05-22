@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import axios, { Axios } from "axios"
-import "./styles.css"
+import "./image-styles.css"
 
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs"
 
